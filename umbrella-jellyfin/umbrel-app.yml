@@ -4,6 +4,7 @@ category: media
 name: Umbrella Jellyfin
 version: "10.8.13"
 tagline: The Free Software Media System
+icon: https://getumbrel.github.io/umbrel-apps-gallery/jellyfin/icon.svg
 description: >-
   An effort to make Jellyfin work with Kodi-jellyfin plugin
 developer: Jellyfin
@@ -13,9 +14,9 @@ repo: https://github.com/jellyfin/jellyfin
 support: https://github.com/jellyfin/jellyfin/issues
 port: 8096
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://getumbrel.github.io/umbrel-apps-gallery/jellyfin/1.jpg
+  - https://getumbrel.github.io/umbrel-apps-gallery/jellyfin/2.jpg
+  - https://getumbrel.github.io/umbrel-apps-gallery/jellyfin/3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
