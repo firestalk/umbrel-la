@@ -2,7 +2,7 @@ manifestVersion: 1
 id: umbrella-jellyfin
 category: media
 name: Umbrella Jellyfin
-version: "10.8.14"
+version: "10.7.7"
 tagline: The Free Software Media System
 icon: https://getumbrel.github.io/umbrel-apps-gallery/jellyfin/icon.svg
 description: >-
