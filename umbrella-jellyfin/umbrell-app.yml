@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: umbrella-jellyfin
+category: media
+name: Umbrella Jellyfin
+version: "10.8.13"
+tagline: The Free Software Media System
+description: >-
+  An effort to make Jellyfin work with Kodi-jellyfin plugin
+developer: Jellyfin
+website: https://jellyfin.org/
+dependencies: []
+repo: https://github.com/jellyfin/jellyfin
+support: https://github.com/jellyfin/jellyfin/issues
+port: 8096
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  ⚠️ Custom package for Jellyfin. There is no reason to use it if default one works fine for you!
+
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Firestalk
+submission: ""

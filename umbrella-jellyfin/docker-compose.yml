@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: umbrella-jellyfin_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: lscr.io/linuxserver/jellyfin:10.8.13
+    restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - JELLYFIN_PublishedServerUrl=umbrel.local
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    devices:
+     - /dev/dri:/dev/dri:rw #optional
+    ports:
+      - 7359:7359/udp # service discovery
+      - 1900:1900/udp # DNLA service discovery
